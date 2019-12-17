@@ -12,6 +12,11 @@
   justify-content: space-between;
 }
 
+.logo {
+  width: 110px;
+  height: 21px;
+}
+
 .navigation__menu {
   display: none;
 }
@@ -28,6 +33,11 @@
 }
 
 @media (min-width: 768px) {
+  .logo {
+    width: 149px;
+    height: 29px;
+  }
+
   .navigation__menu {
     list-style: none;
     display: flex;
