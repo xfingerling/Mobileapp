@@ -1,0 +1,16 @@
+.page-header__baner {
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 568px;
+}
+
+@media (min-width: 768px) {
+  .page-header__baner {
+    height: 758px;
+  }
+}
+
+@media screen and (min-width: 1118px) {
+}
