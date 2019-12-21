@@ -14,3 +14,27 @@
   padding: 0;
   list-style: none;
 }
+
+%title-before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calcRem(20px);
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background-color: $primary-grey-color;
+  opacity: 0.4;
+}
+
+%title-after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calcRem(20px);
+  right: 0;
+  width: 60px;
+  height: 1px;
+  background-color: $primary-grey-color;
+  opacity: 0.4;
+}
