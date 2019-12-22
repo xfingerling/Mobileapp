@@ -2,14 +2,7 @@
   text-align: center;
   padding: calcRem(60px) 0 calcRem(59px);
     &__title {
-      position: relative;
-      color: $primary-aqua-color;
-      font-family: $font-raleway;
-      font-size: calcRem(18px);
-      font-weight: 700;
-      line-height: calcRem(36px);
-      text-transform: uppercase;
-      padding-bottom: calcRem(36px);
+      @extend %section-title;
 
       &::before {
         @extend %title-before;
