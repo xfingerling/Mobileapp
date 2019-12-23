@@ -1,0 +1,155 @@
+.team {
+  text-align: center;
+  padding: calcRem(60px) 0 calcRem(20px);
+  &__title {
+    @extend %section-title;
+    letter-spacing: -0.56px;
+
+    &::before {
+      @extend %title-before;
+      left: 20px;
+    }
+    &::after {
+      @extend %title-after;
+      right: 20px;
+    }
+  }
+  &__text {
+    opacity: 0.8;
+    color: $primary-black-color;
+    font-family: $font-open-sans;
+    font-size: calcRem(16px);
+    font-weight: 700;
+    line-height: calcRem(26px);
+    margin-bottom: 51px;
+  }
+  &__cards {
+    @include center-flex(all);
+    flex-wrap: wrap;
+  }
+  &__card {
+    position: relative;
+    @extend %list;
+    width: 270px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 52px;
+    }
+  }
+  &__card-wrapper {
+    margin-bottom: calcRem(21px);
+  }
+  &__card-img {
+    margin: 0 auto;
+  }
+  &__card-name {
+    color: $secondary-black-color;
+    font-family: $font-open-sans;
+    font-size: calcRem(18px);
+    font-weight: 400;
+    line-height: calcRem(24px);
+    transition: all .7s;
+  }
+  &__card:hover .team__card-name {
+    color: $secondary-aqua-color;
+  }
+  &__card-profession {
+    opacity: 0.56;
+    color: $secondary-black-color;
+    font-family: $font-open-sans;
+    font-size: calcRem(13px);
+    font-weight: 400;
+    line-height: calcRem(24px);
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 12px 12px 23px;
+    background-color: rgba(14, 180, 147, .83);
+    opacity: 0;
+    transition: all .7s;
+
+    &-text {
+      color: $primary-white-color;
+      font-family: $font-open-sans;
+      font-size: calcRem(16px);
+      font-weight: 400;
+      line-height: calcRem(24px);
+      margin-bottom: 48px;
+
+      &--accent {
+      font-weight: 700;
+      margin-bottom: 20px;
+      }
+    }
+    &-menu {
+      @include center-flex(ver);
+      justify-content: space-between;
+      width: 130px;
+      margin: 0 auto;
+    }
+    &-item {
+      @extend %list;
+      @include center-flex(all);
+      width: 42px;
+      height: 42px;
+      background-color: rgba(0, 0, 0, .3);
+      cursor: pointer;
+    }
+  }
+  &__card:hover .team__overlay {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .team {
+    max-width: 631px;
+    padding: calcRem(107px) 0 0;
+
+    &__title {
+      font-size: calcRem(28px);
+      margin-bottom: 68px;
+
+      &::before {
+        left: 160px;
+      }
+      &::after {
+        right: 160px;
+      }
+    }
+    &__text {
+    margin-bottom: 71px;
+    }
+    &__cards {
+      justify-content: space-between;
+    }
+    &__card:nth-of-type(n+1) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 1118px) {
+  .team {
+    max-width: 1118px;
+    padding: calcRem(94px) 0 0;
+
+    &__title {
+
+      &::before {
+        left: 400px;
+      }
+      &::after {
+        right: 400px;
+      }
+    }
+    &__text {
+    margin-bottom: 105px;
+    }
+  }
+}
