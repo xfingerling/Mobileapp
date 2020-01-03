@@ -14,7 +14,7 @@
     @extend %section-title;
     color: $primary-white-color;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     &::before {
       @extend %title-before;
       left: 15px;
@@ -54,14 +54,15 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 43px;
-    &-item {
+    &-link {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 42px;
       height: 42px;
+      background-position: center;
+      background-repeat: no-repeat;
       border-radius: 50%;
-      background-color: red;
     }
   }
   &__phone {
@@ -75,10 +76,12 @@
   }
   &__email {
     color: $purple-color;
+    display: block;
     font-family: $font-open-sans;
     font-size: $main-font-size;
     font-weight: 700;
     text-align: center;
+    text-decoration: none;
   }
 }
 
@@ -140,6 +143,7 @@
     color: $primary-white-color;
     background-color: $third-aqua-color;
     margin-bottom: 58px;
+    cursor: pointer;
   }
 }
 
@@ -155,19 +159,22 @@
 // Social Icon
 .facebook {
   background-color: $facebook-color;
+  background-image: url(../images/icons/social/icon-facebook.png);
 }
 .twitter {
   background-color: $twitter-color;
+  background-image: url(../images/icons/social/icon-twitter.png);
 }
 .linkedin {
   background-color: $linkedin-color;
+  background-image: url(../images/icons/social/icon-linkedin.png);
 }
 // Social icon end
 
 @media screen and (min-width: 768px) {
   .contact {
     &__title {
-      margin-bottom: 50px;
+      margin-bottom: 65px;
       &::before {
         left: 215px;
       }
@@ -200,6 +207,7 @@
 @media screen and (min-width: 1118px) {
   .contact {
     &__title {
+      margin-bottom: 105px;
       &::before {
         left: 420px;
       }
