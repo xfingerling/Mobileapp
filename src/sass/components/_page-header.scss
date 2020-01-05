@@ -64,6 +64,7 @@
   font-family: $font-open-sans;
   font-size: calcRem(20px);
   font-weight: 400;
+  cursor: pointer;
 
   &::before {
     content: '';
