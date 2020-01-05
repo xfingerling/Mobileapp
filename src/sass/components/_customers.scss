@@ -1,0 +1,136 @@
+.customer {
+  &__title {
+    @extend %section-title;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 54px;
+
+    &::before {
+      @extend %title-before;
+      left: -26px;
+    }
+    &::after {
+      @extend %title-after;
+      right: -26px;
+    }
+  }
+
+  &__bg-foto {
+    @include center-flex;
+    width: 99px;
+    height: 99px;
+    background: $secondary-grey-color;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    color: $secondary-black-color;
+    font-family: $font-open-sans;
+    font-size: calcRem(18px);
+    font-weight: 400;
+    line-height: calcRem(24px);
+    transition: all 0.7s;
+    text-align: center;
+  }
+
+  &__position {
+    opacity: 0.56;
+    color: $secondary-black-color;
+    font-family: $font-open-sans;
+    font-size: calcRem(13px);
+    font-weight: 400;
+    line-height: calcRem(24px);
+    text-align: center;
+    line-height: 1;
+  }
+
+  &__text {
+    color: $primary-black-color;
+    font-family: $font-open-sans;
+    font-size: calcRem(16px);
+    font-weight: 400;
+    line-height: calcRem(26px);
+    padding-top: 24px;
+    padding-right: 23px;
+    padding-left: 32px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 24px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 50px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-image: url(../images/icon-quotes.png);
+    }
+  }
+
+  &__pointers {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer {
+    &__title {
+      font-size: calcRem(28px);
+      width: 100%;
+      margin-bottom: 68px;
+
+      &::after {
+        right: 24px;
+      }
+
+      &::before {
+        left: 24px;
+      }
+    }
+
+    &__position {
+      margin-bottom: 44px;
+    }
+
+    &__text {
+      margin-bottom: 60px;
+    }
+
+    &__pointers {
+      margin-bottom: 109px;
+    }
+  }
+}
+
+@media screen and (min-width: 1118px) {
+  .customer {
+    &__title {
+      &::after {
+        right: 220px;
+      }
+
+      &::before {
+        left: 220px;
+      }
+    }
+
+    &__position {
+      margin-bottom: 88px;
+    }
+
+    &__text {
+      margin-bottom: 52px;
+    }
+
+    &__pointers {
+      margin-bottom: 126px;
+    }
+  }
+}
