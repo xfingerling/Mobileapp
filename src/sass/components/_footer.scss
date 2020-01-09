@@ -69,10 +69,12 @@
     color: $purple-color;
     font-family: $font-open-sans;
     font-size: $main-font-size;
+    display: block;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
+    text-decoration: none;
   }
   &__email {
     color: $purple-color;
