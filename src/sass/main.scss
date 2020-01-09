@@ -1,7 +1,8 @@
 @import 'helpers/variables';
+@import 'helpers/function';
 @import 'helpers/placeholders';
 @import 'helpers/mixins';
-@import 'helpers/function';
+// @import 'helpers/function';
 @import 'normalize';
 @import 'base';
 
@@ -10,11 +11,8 @@
 @import 'components/page-header';
 @import 'components/banner';
 @import 'components/navigation';
-
-// @import 'components/';
-// @import 'components/';
-// @import 'components/';
-// @import 'components/';
-// @import 'components/';
-// @import 'components/';
-// @import 'components/';
+@import 'components/features';
+@import 'components/video';
+@import 'components/team';
+@import 'components/customers';
+@import 'components/footer';

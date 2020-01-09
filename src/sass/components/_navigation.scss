@@ -5,31 +5,35 @@
   position: absolute;
   top: 20px;
   background-color: $primary-white-color;
-}
 
-.navigation__wrapper {
-  @include center-flex(ver);
-  justify-content: space-between;
+  &__wrapper {
+    @include center-flex(ver);
+    justify-content: space-between;
+
+    & a {
+      margin-top: 4px;
+    }
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__toggle {
+    clear: both;
+    display: block;
+    font-size: calcRem(30px);
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: $primary-aqua-color;
+    }
+  }
 }
 
 .logo {
   width: 110px;
   height: 21px;
-}
-
-.navigation__menu {
-  display: none;
-}
-
-.navigation__toggle {
-  clear: both;
-  display: block;
-  font-size: calcRem(30px);
-  transition: color 0.2s linear;
-
-  &:hover {
-    color: $primary-aqua-color;
-  }
 }
 
 @media (min-width: 768px) {

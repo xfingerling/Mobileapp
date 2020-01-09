@@ -14,3 +14,38 @@
   padding: 0;
   list-style: none;
 }
+
+%section-title {
+  position: relative;
+  color: $primary-aqua-color;
+  font-family: $font-raleway;
+  font-size: calcRem(18px);
+  font-weight: 700;
+  line-height: calcRem(36px);
+  text-transform: uppercase;
+  margin-bottom: calcRem(36px);
+}
+
+%title-before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calcRem(18px);
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background-color: $primary-grey-color;
+  opacity: 0.4;
+}
+
+%title-after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calcRem(18px);
+  right: 0;
+  width: 60px;
+  height: 1px;
+  background-color: $primary-grey-color;
+  opacity: 0.4;
+}
