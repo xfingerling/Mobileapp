@@ -1,4 +1,3 @@
-
 .section-video {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -7,12 +6,11 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
-
 }
 
 .section-title {
   @extend %section-title;
-  margin-bottom:24px;
+  margin-bottom: 24px;
   color: $primary-black-color;
 }
 .section-video-wrapper {
@@ -25,6 +23,7 @@
   display: block;
   width: 300px;
   border-radius: 8px;
+  object-fit: cover;
 }
 .section-video__description {
   font-family: $font-open-sans;
@@ -34,64 +33,62 @@
   text-align: center;
   margin-bottom: 27px;
 }
-.social-list{
+.social-list {
   width: 155px;
   display: flex;
   justify-content: space-between;
   padding: 0;
+  list-style: none;
 }
-.social-list__item {
-  width: 69px;
-  height: 69px;
-  background-color: #0098cd;
-  border-radius: 50%;
-  display: flex;
+.social-list__link {
   justify-content: center;
   align-items: center;
+  width: 69px;
+  height: 69px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  display: block;
 }
 .icon-svg-1 {
-  width: 28px;
-height: 32px;
-text-align: center;
+  background-image: url(../images/icons/Layer_25.png);
+  background-color: $video-link-color;
 }
 
 .icon-svg-2 {
-  width: 30px;
-  height: 36px;
+  background-image: url(../images/icons/icon_android.png);
+  background-color: $video-link-color;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .section-video {
     padding-top: 108px;
     padding-bottom: 108px;
-    
   }
   .section-video-wrapper {
     margin-bottom: 59px;
   }
-.section-video__video {
-  width: 500px;
-  margin: 0 auto;
-
+  .section-video__video {
+    width: 500px;
+    margin: 0 auto;
+  }
 }
-}
-@media screen and (min-width: 1118px){
-  .section-video{
+@media screen and (min-width: 1118px) {
+  .section-video {
     padding: 72px 0;
-    .container{
+    .container {
       display: flex;
       flex-direction: row;
     }
-    &-wrapper{
+    &-wrapper {
       justify-content: left;
       align-items: flex-start;
-      .section-video__description{
+      .section-video__description {
         text-align: left;
       }
     }
-    &-container{
+    &-container {
       margin-left: 60px;
     }
   }
 }
-
