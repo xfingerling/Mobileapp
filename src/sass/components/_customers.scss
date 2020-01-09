@@ -72,10 +72,42 @@
       background-image: url(../images/icon-quotes.png);
     }
   }
+}
 
-  &__pointers {
-    margin: 0 auto;
-    margin-bottom: 60px;
+.slider {
+  @include center-flex(hor);
+  margin-bottom: 60px;
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    display: inline;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  &__radio {
+    &:checked + .slider__lable::before {
+      background-color: #1ab798;
+      opacity: 1;
+    }
+  }
+
+  &__lable {
+    cursor: pointer;
+    &::before {
+      display: inline-block;
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: #282528;
+      border-radius: 50%;
+      opacity: 0.2;
+    }
   }
 }
 
@@ -102,10 +134,10 @@
     &__text {
       margin-bottom: 60px;
     }
+  }
 
-    &__pointers {
-      margin-bottom: 109px;
-    }
+  .slider {
+    margin-bottom: 109px;
   }
 }
 
@@ -128,9 +160,9 @@
     &__text {
       margin-bottom: 52px;
     }
+  }
 
-    &__pointers {
-      margin-bottom: 126px;
-    }
+  .slider {
+    margin-bottom: 126px;
   }
 }
