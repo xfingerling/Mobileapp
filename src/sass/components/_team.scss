@@ -27,6 +27,8 @@
   &__cards {
     @include center-flex(all);
     flex-wrap: wrap;
+    max-width: 270px;
+    margin: 0 auto;
   }
   &__card {
     position: relative;
@@ -101,6 +103,9 @@
       background-color: rgba(0, 0, 0, 0.3);
       cursor: pointer;
     }
+    &-link {
+      @extend %link;
+    }
   }
   &__card:hover .team__overlay {
     opacity: 1;
@@ -128,9 +133,10 @@
     }
     &__cards {
       justify-content: space-between;
+      max-width: 631px;
     }
     &__card:nth-of-type(n + 1) {
-      margin-bottom: 60px;
+      margin-bottom: 100px;
     }
   }
 }
@@ -152,6 +158,12 @@
       margin: 0 auto;
       margin-bottom: 105px;
       width: 80%;
+    }
+    &__cards {
+      max-width: 1200px;
+    }
+    &__card:nth-of-type(n + 1) {
+      margin-bottom: 140px;
     }
   }
 }

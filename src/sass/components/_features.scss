@@ -17,10 +17,10 @@
       font-size: calcRem(16px);
       font-weight: 400;
       line-height: calcRem(26px);
-      padding-bottom: calcRem(35px);
+      margin-bottom: calcRem(35px);
     }
     &__item:not(:last-of-type) {
-      padding-bottom: calcRem(37px);
+      margin-bottom: calcRem(37px);
     }
     &__item {
       @extend %list;
@@ -34,7 +34,7 @@
         font-size: calcRem(18px);
         font-weight: 700;
         line-height: calcRem(18px);
-        padding-bottom: calcRem(21px);
+        margin-bottom: calcRem(21px);
       }
       &-text {
         color: $primary-black-color;
@@ -42,7 +42,6 @@
         font-size: calcRem(13px);
         font-weight: 400;
         line-height: calcRem(24px);
-        // padding-bottom: calcRem(37px);
       }
     }
     &__item--empty {
@@ -83,7 +82,7 @@
     padding: calcRem(121px) 0 calcRem(117px);
     &__title {
       font-size: calcRem(28px);
-      padding-bottom: calcRem(66px);
+      margin-bottom: calcRem(66px);
     }
     &__title::before {
       left: calcRem(130px);
@@ -94,7 +93,7 @@
     &__text {
       padding-left: calcRem(42px);
       padding-right: calcRem(40px);
-      padding-bottom: calcRem(35px);
+      margin-bottom: calcRem(35px);
     }
     &__list-wrapper {
       display: flex;
@@ -104,7 +103,7 @@
       width: 44%;
     }
     &__item:not(:last-of-type) {
-      padding-bottom: calcRem(108px);
+      margin-bottom: calcRem(108px);
     }
 
   }
@@ -113,7 +112,7 @@
   .features {
     padding: calcRem(121px) 0 calcRem(200px);
     &__title {
-      padding-bottom: calcRem(93px);
+      margin-bottom: calcRem(93px);
       &::before {
         left: calcRem(310px);
       }
@@ -126,7 +125,7 @@
       line-height: calcRem(36px);
       padding-left: 0;
       padding-right: 0;
-      padding-bottom: calcRem(158px);
+      margin-bottom: calcRem(158px);
     }
     &__list-wrapper {
       display: flex;
@@ -146,8 +145,7 @@
 
     }
     &__item:not(:last-of-type) {
-      padding-bottom: calcRem(70px);
-      // padding-bottom: 70px;
+      margin-bottom: calcRem(70px);
 
     }
 
